@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "aa17eb65-066e-4fca-ba9e-1ffbf8e2533b",
+		"name": "Exemplo_NodeJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ler todas as mensagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ler mensagem pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/2",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mensagem\": \"Teste 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar mensagem pelo ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mensagem\": \"mensagem atualizada 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens/3",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover mensagem pelo ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/2",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
