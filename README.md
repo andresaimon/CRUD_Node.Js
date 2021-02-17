@@ -1,7 +1,7 @@
 # CRUD_Node.Js
 Implementando um CRUD com Node.Js, utilizando a plataforma Postman para testes de requisições REST:
 
-Comandos iniciais: npm start + npm run dev;
+Comandos iniciais: npm install -g nodemon + npm start + npm run dev;
 
 O arquivo Exemplo_NodeJS.postman_collection.json é referente à coleção do CRUD implementada no Postman;
 
